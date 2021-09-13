@@ -1,13 +1,3 @@
-// mouse cursor
-const mouseCursor = document.querySelector('.cursor');
-
-window.addEventListener('mousemove', cursor);
-
-function cursor(e){
-    mouseCursor.style.top = e.pageY + 'px';
-    mouseCursor.style.left = e.pageX + 'px';
-}
-
 let controller = new ScrollMagic.Controller();
 let timeline = new TimelineMax();
 
@@ -61,3 +51,15 @@ timeline3
         .setTween(timeline3)
         .setPin('.skin3')
         .addTo(controller)
+
+
+
+// mouse cursor
+const mouseCursor = document.querySelector('.cursor');
+
+window.addEventListener('mousemove', cursor);
+
+function cursor(e){
+    mouseCursor.style.top = e.pageY + 'px';
+    mouseCursor.style.left = e.pageX + 'px';
+}
