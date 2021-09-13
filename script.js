@@ -1,3 +1,12 @@
+const hamburger = document.querySelector('.hamburger');
+
+hamburger.addEventListener('click', toggleBurger);
+
+function toggleBurger() {
+    hamburger.querySelector('.line:nth-child(1)').classList.toggle('line1');
+    hamburger.querySelector('.line:nth-child(2)').classList.toggle('line2');
+}
+
 let controller = new ScrollMagic.Controller();
 let timeline = new TimelineMax();
 
