@@ -101,3 +101,16 @@ nav h1 {
 .skin3 h1 {
   color: #fae5c9;
 }
+
+@media screen and (max-width: 700px) {
+  .skin1,
+  .skin2,
+  .skin3 {
+    flex-direction: column;
+  }
+  .skin-text1,
+  .skin-text2,
+  .skin-text3 {
+    padding: 10px;
+  }
+}
