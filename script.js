@@ -13,8 +13,8 @@ let timeline = new TimelineMax();
 timeline
     .fromTo('.bg1', {y: -50}, {y: 0, duration: 3})
     .to('.container', 5, {top: '0%'}, '-=3')
-    .fromTo('.girl1', {y: 20, x: 20}, {y: -20, x: -20, duration: 3})
-    .to('.skin-text1', 3, {y: -20, x: 20}, '-=3');
+    .fromTo('.girl1', {y: 25, x: 25}, {y: -25, x: -25, duration: 3})
+    .to('.skin-text1', 3, {y: -25, x: 25}, '-=3');
     // .to()
 
     let scene = new ScrollMagic.Scene({
@@ -30,8 +30,8 @@ timeline
 let timeline2 = new TimelineMax();
 
 timeline2
-    .fromTo('.girl2', {y: 20, x: 20}, {y: -20, x: -20, duration: 3})
-    .to('.skin-text2', 3, {y: -20, x: 20}, '-=3');
+    .fromTo('.girl2', {y: 25, x: 25}, {y: -25, x: -25, duration: 3})
+    .to('.skin-text2', 3, {y: -25, x: 25}, '-=3');
 
     let scene2 = new ScrollMagic.Scene({
         triggerElement: '.skin2',
@@ -48,8 +48,8 @@ timeline2
 let timeline3 = new TimelineMax();
 
 timeline3
-    .fromTo('.girl3', {y: 20, x: 20}, {y: -20, x: -20, duration: 3})
-    .to('.skin-text3', 3, {y: -20, x: 20}, '-=3');
+    .fromTo('.girl3', {y: 25, x: 25}, {y: -25, x: -25, duration: 3})
+    .to('.skin-text3', 3, {y: -25, x: 25}, '-=3');
 
     let scene3 = new ScrollMagic.Scene({
         triggerElement: '.skin3',
