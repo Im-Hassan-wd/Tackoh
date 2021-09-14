@@ -1,12 +1,10 @@
 const hamburger = document.querySelector('.hamburger');
-const product = document.querySelector('.product');
 
 hamburger.addEventListener('click', toggleBurger);
 
 function toggleBurger() {
     hamburger.querySelector('.line:nth-child(1)').classList.toggle('line1');
     hamburger.querySelector('.line:nth-child(2)').classList.toggle('line2');
-    product.classList.toggle('show-product');
 }
 
 let controller = new ScrollMagic.Controller();
