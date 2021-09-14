@@ -66,6 +66,7 @@ nav h1 {
 
 .hamburger {
   cursor: pointer;
+  padding: 5px;
 }
 
 .container {
