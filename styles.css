@@ -86,10 +86,12 @@ nav h1.active {
   position: absolute;
   z-index: 1;
   width: 100%;
+  transition: all 0.4s ease-in-out;
 }
 
 .container.active {
   background: white;
+  transition: 0.4s ease-in-out;
 }
 
 .container p {
@@ -133,14 +135,23 @@ nav h1.active {
   left: 0;
   width: 100%;
   height: 100%;
-  background: cornflowerblue;
+  background: white;
   z-index: 2;
-  display: none;
-  /* margin-top: -200px; */
+  opacity: 0;
+  pointer-events: none;
+  margin-top: -50px;
+  transition: 0.5s ease-in-out;
+  clip-path: circle(100px at 90% -20%);
+  -webkit-clip-path: circle(100px at 90% -20%);
+  -moz-clip-path: circle(100px at 90% -20%);
 }
 
 .product-page {
-  display: block;
+  opacity: 1;
+  pointer-events: all;
+  clip-path: circle(1500px at 90% -20%);
+  -webkit-clip-path: circle(1500px at 90% -20%);
+  -moz-clip-path: circle(1500px at 90% -20%);
 }
 
 @media screen and (max-width: 750px) {
