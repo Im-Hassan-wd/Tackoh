@@ -29,7 +29,7 @@ timeline
         triggerHook: 0,
     })
         .setTween(timeline)
-        .setPin('.content')
+        .setPin('.front-cover')
         .addTo(controller)
 
 
@@ -69,7 +69,7 @@ timeline3
 
 
 
-// mouse cursor
+//mouse cursor
 const mouseCursor = document.querySelector('.cursor');
 
 window.addEventListener('mousemove', cursor);
