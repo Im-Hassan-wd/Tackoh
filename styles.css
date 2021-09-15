@@ -88,6 +88,10 @@ nav h1.active {
   width: 100%;
 }
 
+.container.active {
+  background: white;
+}
+
 .container p {
   color: white;
   max-width: 300px;
