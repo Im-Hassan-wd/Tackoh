@@ -8,9 +8,6 @@ hamburger.addEventListener('click', toggleBurger);
 function toggleBurger() {
     hamburger.querySelector('.line:nth-child(1)').classList.toggle('line1');
     hamburger.querySelector('.line:nth-child(2)').classList.toggle('line2');
-    products.classList.toggle('product-page');
-    title.classList.toggle('active');
-    container.classList.toggle('active');
 }
 
 let controller = new ScrollMagic.Controller();
