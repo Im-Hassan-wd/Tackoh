@@ -33,12 +33,12 @@ timeline
     // .to()
 
     let scene = new ScrollMagic.Scene({
-        triggerElement: '.skin1',
+        triggerElement: '.front-cover',
         duration: '100%',
         triggerHook: 0,
     })
         .setTween(timeline)
-        .setPin('.skin1')
+        // .setPin('.front-cover')
         .addTo(controller)
 
 
@@ -55,7 +55,7 @@ timeline2
     })
 
         .setTween(timeline2)
-        .setPin('.skin2')
+        // .setPin('.skin2')
         .addTo(controller)
 
 
@@ -73,7 +73,7 @@ timeline3
     })
 
         .setTween(timeline3)
-        .setPin('.skin3')
+        // .setPin('.skin3')
         .addTo(controller)
 
 
