@@ -14,19 +14,17 @@ let controller = new ScrollMagic.Controller();
 let timeline = new TimelineMax();
 
 timeline
-    .fromTo('.bg1', {y: -70}, {y: 0, duration: 3})
-    .to('.container', 5, {top: '0%'}, '-=3')
     .fromTo('.girl1', {y: 25, x: 25}, {y: -25, x: -25, duration: 3})
     .to('.skin-text1', 3, {y: -25, x: 25}, '-=3');
     // .to()
 
     let scene = new ScrollMagic.Scene({
-        triggerElement: '.front-cover',
+        triggerElement: '.skin1',
         duration: '100%',
         triggerHook: 0,
     })
         .setTween(timeline)
-        .setPin('.front-cover')
+        .setPin('.skin1')
         .addTo(controller)
 
 
