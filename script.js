@@ -11,6 +11,18 @@ function toggleBurger() {
     hamburger.querySelector('.line:nth-child(2)').classList.toggle('line2');
 }
 
+function translateBg() {
+  if (this.scrollY > this.innerHeight / 25){
+      bg.classList.add('trans-bg');
+      container.style.transform = 'translateY(-640px)';
+      container.style.transition = '2s ease-in-out';
+    } else {
+      container.style.transform = 'translateY(0px)';
+      container.style.transition = '2s ease-in-out';
+      bg.classList.remove('trans-bg');
+    }
+}
+
 let controller = new ScrollMagic.Controller();
 let timeline = new TimelineMax();
 
