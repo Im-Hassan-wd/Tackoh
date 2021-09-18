@@ -2,6 +2,7 @@ const hamburger = document.querySelector('.hamburger');
 const products  = document.querySelector('.products');
 const title = document.querySelector('nav h1');
 const container = document.querySelector('.container');
+const bg = document.querySelector('.bg1');
 
 hamburger.addEventListener('click', toggleBurger);
 window.addEventListener('scroll', translateBg);
