@@ -4,6 +4,7 @@ const title = document.querySelector('nav h1');
 const container = document.querySelector('.container');
 
 hamburger.addEventListener('click', toggleBurger);
+window.addEventListener('scroll', translateBg);
 
 function toggleBurger() {
     hamburger.querySelector('.line:nth-child(1)').classList.toggle('line1');
