@@ -122,6 +122,10 @@ nav h1.active {
   align-items: center;
 }
 
+.skin img {
+  transform: translateY(25) translateX(25);
+}
+
 .skin1 h1 {
   color: #c38866;
 }
