@@ -28,6 +28,11 @@
   object-fit: cover;
   z-index: -1;
   top: -30px;
+  transition: transform 0.4s ease;
+}
+
+.trans-bg {
+  transform: translateY(50px);
 }
 
 .title {
